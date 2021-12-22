@@ -8,7 +8,7 @@ export default function App({ children, title }) {
         <div>
             <Head title={title} />
             <Navbar />
-            {children}
+            <div className="pt-4">{children}</div>
         </div>
     );
 }
