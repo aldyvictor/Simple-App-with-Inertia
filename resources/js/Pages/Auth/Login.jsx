@@ -6,7 +6,7 @@ import { Link } from "@inertiajs/inertia-react";
 
 export default function Login() {
     return (
-        <Guest title="Login">
+        <>
             <div className="card">
                 <div className="card-header">Login</div>
                 <div className="card-body">Login Form</div>
@@ -14,6 +14,8 @@ export default function Login() {
                     <Link href="/register">Register</Link>
                 </div>
             </div>
-        </Guest>
+        </>
     );
 }
+
+Login.layout = (page) => <Guest children={page} title="Login"></Guest>;
