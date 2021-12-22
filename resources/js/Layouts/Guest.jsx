@@ -7,10 +7,7 @@ export default function App({ children, title }) {
         <div className="min-vh-100 d-flex align-items-center justify-content-center">
             <Head title={`${title} | Div`} />
 
-            <div className="col-md-4">
-                <Link href="/">Logo</Link>
-                {children}
-            </div>
+            <div className="col-md-4">{children}</div>
         </div>
     );
 }
